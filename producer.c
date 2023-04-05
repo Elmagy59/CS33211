@@ -21,7 +21,7 @@ int main() {
 	sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
 	sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
 	// Initialization of loop amount and prompts the user with amount of items to produce
-	int loop = 20;
+	int loop = 5;
 	int i = 0;
 	printf("\nProducer ready to create %d items.\n", loop);
 
