@@ -20,7 +20,7 @@ int main(){
         sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
         sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
 	// Initialization of loop counter
-        int loop = 20;
+        int loop = 5;
 	// Prints to user how many items the consumer is ready to recieve
         printf("\nConsumer ready to receive %d items.\n", loop);
 
